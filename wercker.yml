@@ -6,7 +6,7 @@ build:
         name: prepare the required items.
         code: |
           sudo apt-get update
-          sudo apt-get install -y libssl-dev && sudo gem install fpm-cookery --no-ri --no-rdoc
+          sudo apt-get install -y libssl-dev unzip && sudo gem install fpm-cookery --no-ri --no-rdoc
     - script:
         name: get the source and build
         code: |
