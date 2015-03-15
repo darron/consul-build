@@ -1,0 +1,4 @@
+# Options for Consul
+# See https://consul.io for more details
+GOMAXPROCS=4
+CONSUL_OPTIONS=""
