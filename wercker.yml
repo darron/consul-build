@@ -22,3 +22,4 @@ deploy:
           sudo gem install package_cloud --no-ri --no-rdoc
           PACKAGECLOUD=$(eval echo "\$PACKAGECLOUD_TOKEN") && echo -e "$PACKAGECLOUD" > ~/.packagecloud && chmod 600 ~/.packagecloud
           DEB_FILE=$(find . -name '*.deb') && package_cloud push darron/consul/ubuntu/trusty $DEB_FILE
+          DEB_FILE=$(find . -name '*.deb') && package_cloud push darron/octohost/ubuntu/trusty $DEB_FILE
