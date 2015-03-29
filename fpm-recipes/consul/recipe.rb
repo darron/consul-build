@@ -1,13 +1,13 @@
 class Consul < FPM::Cookery::Recipe
   name 'consul'
 
-  version '0.5.0'
-  revision '2'
+  version '0.5.1-dev'
+  revision '1'
   description 'Consul Service Discovery Platform'
 
   homepage 'https://www.consul.io'
-  source "https://dl.bintray.com/mitchellh/consul/#{version}_linux_amd64.zip"
-  sha256 '161f2a8803e31550bd92a00e95a3a517aa949714c19d3124c46e56cfdc97b088'
+  source 'http://shared.froese.org/2015/consul-0.5.1-dev.tgz'
+  sha256 '83fa3a539dc67dc1e46dd729e038527db72cdcb28517beb1f264e5b782fb9a69'
 
   maintainer 'Darron Froese <darron@froese.org'
   vendor 'octohost'
@@ -21,7 +21,7 @@ class Consul < FPM::Cookery::Recipe
 
   def build
     safesystem "mkdir -p #{builddir}/usr/local/bin/"
-    safesystem "cp -f #{builddir}/#{version}_linux_amd64/consul #{builddir}/usr/local/bin/"
+    safesystem "cp -f #{builddir}/consul #{builddir}/usr/local/bin/"
   end
 
   def install
