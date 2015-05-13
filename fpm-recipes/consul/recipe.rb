@@ -1,15 +1,15 @@
 class Consul < FPM::Cookery::Recipe
   name 'consul'
 
-  version '0.5.1-dev'
-  revision '1'
+  version '0.5.1'
+  revision '2'
   description 'Consul Service Discovery Platform'
 
   homepage 'https://www.consul.io'
-  source 'http://shared.froese.org/2015/consul-0.5.1-dev.tgz'
-  sha256 '83fa3a539dc67dc1e46dd729e038527db72cdcb28517beb1f264e5b782fb9a69'
+  source "https://dl.bintray.com/mitchellh/consul/#{version}_linux_amd64.zip"
+  sha256 '967ad75865b950698833eaf26415ba48d8a22befb5d4e8c77630ad70f251b100'
 
-  maintainer 'Darron Froese <darron@froese.org'
+  maintainer 'Darron Froese <darron@froese.org>'
   vendor 'octohost'
 
   license 'Mozilla Public License, version 2.0'
