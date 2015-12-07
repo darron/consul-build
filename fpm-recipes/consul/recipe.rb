@@ -21,7 +21,7 @@ class Consul < FPM::Cookery::Recipe
 
   def build
     safesystem "mkdir -p #{builddir}/usr/local/bin/"
-    safesystem "cp -f #{builddir}/consul #{builddir}/usr/local/bin/"
+    safesystem "cp -f #{builddir}/consul_#{version}_linux_amd64/consul #{builddir}/usr/local/bin/"
   end
 
   def install
