@@ -1,13 +1,13 @@
 class Consul < FPM::Cookery::Recipe
   name 'consul'
 
-  version '0.6.1'
+  version '0.6.3'
   revision '1'
   description 'Consul Service Discovery Platform'
 
   homepage 'https://www.consul.io'
   source "https://releases.hashicorp.com/consul/#{version}/consul_#{version}_linux_amd64.zip"
-  sha256 'dbb3c348fdb7cdfc03e5617956b243c594a399733afee323e69ef664cdadb1ac'
+  sha256 'b0532c61fec4a4f6d130c893fd8954ec007a6ad93effbe283a39224ed237e250'
 
   maintainer 'Darron Froese <darron@froese.org>'
   vendor 'octohost'
