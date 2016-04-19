@@ -2,7 +2,7 @@ class Consul < FPM::Cookery::Recipe
   name 'consul'
 
   version '0.6.4'
-  revision '1'
+  revision '2'
   description 'Consul Service Discovery Platform'
 
   homepage 'https://www.consul.io'
